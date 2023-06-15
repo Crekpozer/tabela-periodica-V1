@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 :root{
     --cor-nao-metais: #A0D345;
@@ -38,19 +38,48 @@ p#introducao{
     padding-top: 1.3em;
 }
 
+div#moldura-tabela{
+    border: 1px solid black;
+    height: 550px;
+    width: 700px;
+}
+
 table{
-    width: 100%;
+    position: relative;
 }
 
 th{
     background-color: lightgray;
-    padding: 10px;
+}
+
+th#periodo{
+    
 }
 
 th.vazio{
     background-color: white;
 }
 
-th#periodo{
-    text-align: justify;
+td.elemento > h1{
+    text-align: center;
+    padding: 5px;
+}
+
+p.texto-rotacionado{
+    transform: rotate(90deg);
+}
+
+.numero-atomico{
+    text-align: left;
+    font-size: .7em;
+}
+
+.simbolo-quimico{
+    text-align: center;
+    font-size: 1em;
+}
+
+.elemento{
+    width: 10px;
+    height: 10px;
 }
