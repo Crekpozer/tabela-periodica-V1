@@ -1,5 +1,18 @@
 @charset "utf-8";
 
+:root{
+    --cor-nao-metais: #A0D345;
+    --cor-metais-alcalino-terrosos: #EADA00;
+    --cor-outros-metais: #A1C7D3;
+    --cor-actinidios: #DCADD5;
+    --cor-gases-nobres: #3E9EE3;
+    --cor-semimetais: #4DB6AC;
+    --cor-metais-de-transiçao: #EB8E8E;
+    --cor-metais-alcalinos: #F0B200;
+    --cor-halogenios: #70CBEB;
+    --cor-lantanideos: #90E3E9;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +26,7 @@ body{
 main{
     background-color: white;
     height: 100vh;
-    width: 80vw;
+    width: 100vw;
     margin: auto;
 }
 
@@ -36,4 +49,8 @@ th{
 
 th.vazio{
     background-color: white;
+}
+
+th#periodo{
+    text-align: justify;
 }
