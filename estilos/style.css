@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 :root{
     --cor-nao-metais: #A0D345;
     --cor-metais-alcalino-terrosos: #EADA00;
@@ -11,6 +13,8 @@
     --cor-metais-alcalinos: #F0B200;
     --cor-halogenios: #70CBEB;
     --cor-lantanideos: #90E3E9;
+
+    
 }
 
 *{
@@ -38,14 +42,17 @@ p#introducao{
     padding-top: 1.3em;
 }
 
-div#moldura-tabela{
+div#moldura-tabela{    
+    display: block;
+    margin: auto;
+    
     border: 1px solid black;
-    height: 550px;
-    width: 700px;
+    height: 50%;
+    width: 680px;
 }
 
 table{
-    position: relative;
+    
 }
 
 th{
@@ -60,13 +67,24 @@ th.vazio{
     background-color: white;
 }
 
+td.elemento{
+    
+    border: 1px solid black;
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+td.elemento:hover{
+    background-color: pink;
+}
+
 td.elemento > h1{
     text-align: center;
     padding: 5px;
 }
 
 p.texto-rotacionado{
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 .numero-atomico{
