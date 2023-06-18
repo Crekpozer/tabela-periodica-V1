@@ -101,3 +101,8 @@ p.texto-rotacionado{
     width: 10px;
     height: 10px;
 }
+
+.moldura-iframe{
+    border: 1px solid black;
+    background-color: black;
+}
