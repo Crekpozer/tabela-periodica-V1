@@ -49,18 +49,11 @@ div#moldura-tabela{
     border: 1px solid black;
     height: 50%;
     width: 680px;
-}
 
-table{
-    
 }
 
 th{
     background-color: lightgray;
-}
-
-th#periodo{
-    
 }
 
 th.vazio{
@@ -68,7 +61,6 @@ th.vazio{
 }
 
 td.elemento{
-    
     border: 1px solid black;
     border-radius: 2px;
     font-family: 'Courier New', Courier, monospace;
@@ -103,6 +95,5 @@ p.texto-rotacionado{
 }
 
 .moldura-iframe{
-    border: 1px solid black;
-    background-color: black;
+    width: fit-content;
 }
