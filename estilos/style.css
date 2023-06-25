@@ -14,7 +14,16 @@
     --cor-halogenios: #70CBEB;
     --cor-lantanideos: #90E3E9;
 
-    
+    --cor-titulo-nao-metais: #496120;
+    --cor-titulo-metais-alcalino-terrosos: #615A00;
+    --cor-titulo-outros-metais: #7A98A1;
+    --cor-titulo-actinidios: #C79DC1;
+    --cor-titulo-gases-nobres: #3993D4;
+    --cor-titulo-semimetais: #2C6962;
+    --cor-titulo-metais-de-transiçao: #9C5D5D;
+    --cor-titulo-metais-alcalinos: #735600;
+    --cor-titulo-halogenios: #366170;
+    --cor-titulo-lantanideos: #246B70;
 }
 
 *{
@@ -30,7 +39,6 @@ body{
 main{
     background-color: white;
     height: 100vh;
-    width: 100vw;
     margin: auto;
 }
 
@@ -51,7 +59,6 @@ div#moldura-tabela{
     display: block;
     margin: auto;
     
-    border: 1px solid black;
     height: 600px;
     width: 1080px;
 
@@ -67,7 +74,6 @@ th.vazio{
 }
 
 td.elemento{
-    border: 1px solid black;
     border-radius: 2px;
     font-family: 'Courier New', Courier, monospace;
     width: 50px;
@@ -104,4 +110,50 @@ p.texto-rotacionado{
 
 .moldura-iframe{
     width: fit-content;
+    border: 1px solid black;
+}
+
+.nao-metal{
+    background-color: var(--cor-nao-metais);
+    border: 1px solid var(--cor-titulo-nao-metais);
+}
+
+.metal-alcalino-terroso{
+    background-color: var(--cor-metais-alcalino-terrosos);
+    border: 1px solid var(--cor-titulo-metais-alcalino-terrosos);
+}
+
+.outros-metais{
+    background-color: var(--cor-outros-metais);
+    border: 1px solid var(--cor-titulo-outros-metais);
+}
+
+.actinidios{
+    background-color: var(--cor-actinidios);
+    border: 1px solid var(--cor-titulo-actinidios);
+}
+
+.gases-nobres{
+    background-color: var(--cor-gases-nobres);
+    border: 1px solid var(--cor-titulo-gases-nobres);
+}
+
+.semimetais{
+    background-color: var(--cor-semimetais);
+    border: 1px solid var(--cor-titulo-semimetais);
+}
+
+.metais-de-tansicao{
+    background-color: var(--cor-metais-de-transiçao);
+    border: 1px solid var(--cor-titulo-metais-de-transiçao);
+}
+
+.metais-alcalinos{
+    background-color: var(--cor-metais-alcalinos);
+    border: 1px solid var(--cor-titulo-metais-alcalinos);
+}
+
+.halogenios{
+    background-color: var(--cor-halogenios);
+    border: 1px solid var(--cor-titulo-halogenios);
 }
