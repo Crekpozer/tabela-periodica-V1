@@ -38,6 +38,11 @@ main > h1, p{
     text-align: center;
 }
 
+#tabela{
+    margin: auto;
+    width: 1000px;
+}
+
 p#introducao{
     padding-top: 1.3em;
 }
@@ -47,13 +52,14 @@ div#moldura-tabela{
     margin: auto;
     
     border: 1px solid black;
-    height: 50%;
-    width: 680px;
+    height: 600px;
+    width: 1080px;
 
 }
 
 th{
     background-color: lightgray;
+    
 }
 
 th.vazio{
@@ -64,6 +70,8 @@ td.elemento{
     border: 1px solid black;
     border-radius: 2px;
     font-family: 'Courier New', Courier, monospace;
+    width: 50px;
+    height: 50px;
 }
 
 td.elemento:hover{
