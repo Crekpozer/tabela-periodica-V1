@@ -58,10 +58,8 @@ p#introducao{
 div#moldura-tabela{    
     display: block;
     margin: auto;
-    
     height: 600px;
     width: 1080px;
-
 }
 
 th{
@@ -78,10 +76,6 @@ td.elemento{
     font-family: 'Courier New', Courier, monospace;
     width: 50px;
     height: 50px;
-}
-
-td.elemento:hover{
-    background-color: pink;
 }
 
 td.elemento > h1{
@@ -118,9 +112,17 @@ p.texto-rotacionado{
     border: 1px solid var(--cor-titulo-nao-metais);
 }
 
+.nao-metal:hover{
+    background-color: var(--cor-titulo-nao-metais);
+}
+
 .metal-alcalino-terroso{
     background-color: var(--cor-metais-alcalino-terrosos);
     border: 1px solid var(--cor-titulo-metais-alcalino-terrosos);
+}
+
+.metal-alcalino-terroso:hover{
+    background-color: var(--cor-titulo-metais-alcalino-terrosos);
 }
 
 .outros-metais{
@@ -128,9 +130,17 @@ p.texto-rotacionado{
     border: 1px solid var(--cor-titulo-outros-metais);
 }
 
+.outros-metais:hover{
+    background-color: var(--cor-titulo-outros-metais);
+}
+
 .actinidios{
     background-color: var(--cor-actinidios);
     border: 1px solid var(--cor-titulo-actinidios);
+}
+
+.actinidios:hover{
+    background-color: var(--cor-titulo-actinidios);
 }
 
 .gases-nobres{
@@ -138,9 +148,17 @@ p.texto-rotacionado{
     border: 1px solid var(--cor-titulo-gases-nobres);
 }
 
+.gases-nobres:hover{
+    background-color: var(--cor-titulo-gases-nobres);
+}
+
 .semimetais{
     background-color: var(--cor-semimetais);
     border: 1px solid var(--cor-titulo-semimetais);
+}
+
+.semimetais:hover{
+    background-color: var(--cor-titulo-semimetais);
 }
 
 .metais-de-tansicao{
@@ -148,12 +166,24 @@ p.texto-rotacionado{
     border: 1px solid var(--cor-titulo-metais-de-transiçao);
 }
 
+.metais-de-tansicao:hover{
+    background-color: var(--cor-titulo-metais-de-transiçao);
+}
+
 .metais-alcalinos{
     background-color: var(--cor-metais-alcalinos);
     border: 1px solid var(--cor-titulo-metais-alcalinos);
 }
 
+.metais-alcalinos:hover{
+    background-color: var(--cor-titulo-metais-alcalinos);
+}
+
 .halogenios{
     background-color: var(--cor-halogenios);
     border: 1px solid var(--cor-titulo-halogenios);
+}
+
+.halogenios:hover{
+    background-color: var(--cor-titulo-halogenios);
 }
