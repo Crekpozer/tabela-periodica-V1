@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scCde=1.0">
+    <title>Mendelévio</title>
+    <style>
+        @charset "UTF-8";
+
+        :root{
+            --cor-nao-metais: #A0D345;
+            --cor-metais-alcalino-terrosos: #EADA00;
+            --cor-outros-metais: #A1C7D3;
+            --cor-actinidios: #DCADD5;
+            --cor-gases-nobres: #3E9EE3;
+            --cor-semimetais: #4DB6AC;
+            --cor-metais-de-transiçao: #EB8E8E;
+            --cor-metais-alcalinos: #F0B200;
+            --cor-halogenios: #70CBEB;
+            --cor-lantanideos: #90E3E9;
+
+            --cor-titulo-nao-metais: #496120;
+            --cor-titulo-metais-alcalino-terrosos: #615A00;
+            --cor-titulo-outros-metais: #7A98A1;
+            --cor-titulo-actinidios: #C79DC1;
+            --cor-titulo-gases-nobres: #3993D4;
+            --cor-titulo-semimetais: #2C6962;
+            --cor-titulo-metais-de-transiçao: #9C5D5D;
+            --cor-titulo-metais-alcalinos: #735600;
+            --cor-titulo-halogenios: #366170;
+            --cor-titulo-lantanideos: #246B70;
+        }
+
+
+        
+        td.nao-metal{
+            background-color: var(--cor-nao-metais);
+        }
+
+        td.metal-alcalino-terroso{
+            background-color: var(--cor-metais-alcalino-terrosos);
+        }
+
+        td.outros-metais{
+            background-color: var(--cor-outros-metais);
+        }
+
+        td.actinidios{
+            background-color: var(--cor-actinidios);
+        }
+
+        td.gases-cobres{
+            background-color: var(--cor-gases-nobres);
+        }
+
+        td.semimetais{
+            background-color: var(--cor-semimetais);
+        }
+
+        td.metais-de-tansição{
+            background-color: var(--cor-metais-de-transiçao);
+        }
+
+        td.metais-alcalinos{
+            background-color: var(--cor-metais-alcalinos);
+        }
+
+        td.halogenios{
+            background-color: var(--cor-halogenios);
+        }
+
+        td.lantanideos{
+            background-color: var(--cor-lantanideos);
+        }
+
+        th.nao-metal{
+            background-color: var(--cor-titulo-nao-metais);
+        }
+
+        th.metal-alcalino-terroso{
+            background-color: var(--cor-titulo-metais-alcalino-terrosos);
+        }
+
+        th.outros-metais{
+            background-color: var(--cor-titulo-outros-metais);
+        }
+
+        th.actinidios{
+            background-color: var(--cor-titulo-actinidios);
+        }
+
+        th.gases-nobres{
+            background-color: var(--cor-titulo-gases-nobres);
+        }
+
+        th.semimetais{
+            background-color: var(--cor-titulo-semimetais);
+        }
+
+        th.metais-de-tansição{
+            background-color: var(--cor-titulo-metais-de-transiçao);
+        }
+
+        th.metais-alcalinos{
+            background-color: var(--cor-titulo-metais-alcalinos);
+        }
+
+        th.halogenios{
+            background-color: var(--cor-titulo-halogenios);
+        }
+
+        th.lantanideos{
+            background-color: var(--cor-titulo-lantanideos);
+        }
+
+        body{
+            background-color: white;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        table{
+            width: 535px;
+        }
+
+        #moldura-tabela{
+            width: 535px;
+        }
+
+        #representacao-tabela{
+            border-radius: 5px;
+            width: 100px;
+            height: 100px;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #representacao-tabela > h1{
+            font-family: monospace;
+            font-size: 3em;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        #titulo-elemento{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 1.5em;
+
+            color: white;
+            border-radius: 3px;
+
+            width: 700px;
+            
+
+            text-align: left;
+            padding-left: 5px;
+
+        }
+
+        #nome-elemento{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        #massa-atomica{
+            color: black;
+            display: inline-block;
+            text-align: center;
+
+            width: 40px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+
+        #numero-atomico{
+            color: white;
+            display: inline-block;
+            
+            border-radius: 3px;
+
+            background-color: rgba(0, 0, 0, 0.384);
+            width: 1.8em;
+            height: 1em;
+            text-align: center;
+
+            margin-top: 10px;
+            padding: 7px;
+        }
+
+        .texto-fixo{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            padding: 4px;
+            font-weight: bolder;
+
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+        }
+
+        .valor{
+            box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.384); 
+            padding-left: 4px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="moldura-tabela">
+        <table>
+            <tr><!--Primeira Linha-->
+                <th class="metaCd-alcalinos" id="titulo-elemento" colspan="3">Mendelévio</th>
+            </tr>
+            
+            <tr>
+                
+                <td class="metais-alcalinos" id="representacao-tabela" rowspan="6">
+                    <h1 id="simbolo-quimico">Md</h1>
+                    <p id="nome-elemento">Mendelévio</p>
+                    <p id="numero-atomico">101</p>
+                    <p id="massa-atomica">(258)</p>
+                </td>
+
+                <td class="texto-fixo">Símbolo</td>
+                <td class="valor">Md</td>
+            </tr>
+
+            <tr>
+                <td class="texto-fixo">Número atômico</td>
+                <td class="valor">101</td>
+            </tr>
+                
+            <tr>
+                <td class="texto-fixo">Massa Atômica</td>
+                <td class="valor">(258)</td>
+            </tr>
+                
+            <tr>
+                <td class="texto-fixo">Configuração Eletronica</td>
+                <td class="valor">------</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
