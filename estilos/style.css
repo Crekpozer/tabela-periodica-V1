@@ -6,7 +6,7 @@
     --cor-nao-metais: #A0D345;
     --cor-metais-alcalino-terrosos: #EADA00;
     --cor-outros-metais: #A1C7D3;
-    --cor-actinidios: #DCADD5;
+    --cor-actinideos: #DCADD5;
     --cor-gases-nobres: #3E9EE3;
     --cor-semimetais: #4DB6AC;
     --cor-metais-de-transiçao: #EB8E8E;
@@ -17,7 +17,7 @@
     --cor-titulo-nao-metais: #496120;
     --cor-titulo-metais-alcalino-terrosos: #615A00;
     --cor-titulo-outros-metais: #7A98A1;
-    --cor-titulo-actinidios: #C79DC1;
+    --cor-titulo-actinideos: #C79DC1;
     --cor-titulo-gases-nobres: #3993D4;
     --cor-titulo-semimetais: #2C6962;
     --cor-titulo-metais-de-transicao: #9C5D5D;
@@ -107,21 +107,21 @@ p.texto-rotacionado{
     border: 1px solid black;
 }
 
-.nao-metal{
+.nao-metais{
     background-color: var(--cor-nao-metais);
     border: 1px solid var(--cor-titulo-nao-metais);
 }
 
-.nao-metal:hover{
+.nao-metais:hover{
     background-color: var(--cor-titulo-nao-metais);
 }
 
-.metal-alcalino-terroso{
+.metais-alcalino-terrosos{
     background-color: var(--cor-metais-alcalino-terrosos);
     border: 1px solid var(--cor-titulo-metais-alcalino-terrosos);
 }
 
-.metal-alcalino-terroso:hover{
+.metais-alcalino-terrosos:hover{
     background-color: var(--cor-titulo-metais-alcalino-terrosos);
 }
 
@@ -134,13 +134,13 @@ p.texto-rotacionado{
     background-color: var(--cor-titulo-outros-metais);
 }
 
-.actinidios{
-    background-color: var(--cor-actinidios);
-    border: 1px solid var(--cor-titulo-actinidios);
+.actinideos{
+    background-color: var(--cor-actinideos);
+    border: 1px solid var(--cor-titulo-actinideos);
 }
 
-.actinidios:hover{
-    background-color: var(--cor-titulo-actinidios);
+.actinideos:hover{
+    background-color: var(--cor-titulo-actinideos);
 }
 
 .gases-nobres{
