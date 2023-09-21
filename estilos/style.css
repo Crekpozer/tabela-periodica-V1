@@ -161,12 +161,12 @@ p.texto-rotacionado{
     background-color: var(--cor-titulo-semimetais);
 }
 
-.metais-de-tansicao{
+.metais-de-transicao{
     background-color: var(--cor-metais-de-transiçao);
     border: 1px solid var(--cor-titulo-metais-de-transicao);
 }
 
-.metais-de-tansicao:hover{
+.metais-de-transicao:hover{
     background-color: var(--cor-titulo-metais-de-transicao);
 }
 
