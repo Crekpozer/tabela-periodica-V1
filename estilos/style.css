@@ -37,13 +37,17 @@ body{
 }
 
 main{
-    
+    background-image: radial-gradient(at 50% 100%, darkblue, black);
     height: 100vh;
     margin: auto;
 }
 
 main > h1, p{
     text-align: center;
+}
+
+#titulo-principal, #autor{
+    color:white;
 }
 
 #tabela{
@@ -53,14 +57,25 @@ main > h1, p{
 
 p#introducao{
     padding-top: 1.3em;
+    
 }
 
 div#moldura-tabela{    
-    
+    border: 2px solid white;
+    border-radius: 10px;
     display: block;
     margin: auto;
     height: 600px;
     width: 1080px;
+    background-color: white;
+}
+
+#lantanideos{
+    font-size: 1em;
+}
+
+#actinideos{
+    font-size: 0.8em;
 }
 
 th{
@@ -69,11 +84,11 @@ th{
 }
 
 th.vazio{
-    background-color: white;
+    background-color: transparent;
 }
 
 td.elemento{
-    border-radius: 2px;
+    border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
     width: 50px;
     height: 50px;
@@ -86,6 +101,15 @@ td.elemento > h1{
 
 p.texto-rotacionado{
     transform: rotate(-90deg);
+    
+}
+
+#periodo{
+    border-radius: 5px 0px 0px 7px;
+}
+
+#legenda-horizontal{
+    border-radius: 5px 5px 0px 0px;
 }
 
 .numero-atomico{
@@ -95,7 +119,6 @@ p.texto-rotacionado{
 
 .simbolo-quimico{
     text-align: center;
-    font-size: 1em;
 }
 
 .elemento{
@@ -105,7 +128,6 @@ p.texto-rotacionado{
 
 .moldura-iframe{
     width: fit-content;
-    border: 1px solid black;
 }
 
 .nao-metais{
